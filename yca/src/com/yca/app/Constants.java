@@ -1,4 +1,4 @@
-package com.yca;
+package com.yca.app;
 
 import com.loopj.android.http.AsyncHttpClient;
 

@@ -12,7 +12,7 @@
 	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
 	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
     <application
-        android:name="com.yca.YacApplication"
+        android:name="com.yca.app.YacApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -20,7 +20,7 @@
         <meta-data android:value="YOUR_APP_KEY" android:name="UMENG_APPKEY"></meta-data>
 		<meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/>
         <activity
-            android:name=".MainActivity"
+            android:name="com.yca.app.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
