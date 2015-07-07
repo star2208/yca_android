@@ -1,15 +1,16 @@
 package com.yca.app;
 
 import com.yca.R;
-import com.yca.R.id;
-import com.yca.R.layout;
-import com.yca.R.menu;
 import com.yca.activity.BaseActivity;
 
+import android.app.ActionBar;
 import android.app.Activity;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 
 
 public class MainActivity extends BaseActivity {
@@ -18,6 +19,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
     }
 
 

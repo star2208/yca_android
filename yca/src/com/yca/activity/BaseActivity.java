@@ -7,15 +7,17 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.pm.ActivityInfo;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-
 import com.umeng.analytics.MobclickAgent;
+import com.yca.R;
 import com.yca.fragment.BaseFragment;
 import com.yca.tool.Tool;
+import com.yca.util.SystemBarTintManager;
 import com.yca.view.BaseContent;
 
 import de.greenrobot.event.EventBus;
@@ -39,6 +41,11 @@ public abstract class BaseActivity extends Activity implements OnClickListener,
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.savedInstanceState = savedInstanceState;
+		if(SystemBarTintManager.isKitKat()){
+			SystemBarTintManager tintManager = new SystemBarTintManager(this);  
+			tintManager.setStatusBarTintEnabled(true);
+			tintManager.setStatusBarTintDrawable(new ColorDrawable(getResources().getColor(R.color.mxx_item_theme_color_alpha)));
+		}
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		tool = Tool.getInstance();
 		tool.init(this);
