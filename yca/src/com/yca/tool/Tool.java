@@ -17,7 +17,7 @@ import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
-import com.yca.Constants;
+import com.yca.app.Constants;
 import com.yca.bean.BaseBean;
 import com.yca.bean.NetWorkInfo;
 
