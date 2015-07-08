@@ -15,10 +15,10 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import com.umeng.analytics.MobclickAgent;
 import com.yca.R;
+import com.yca.content.BaseContent;
 import com.yca.fragment.BaseFragment;
 import com.yca.tool.Tool;
 import com.yca.util.SystemBarTintManager;
-import com.yca.view.BaseContent;
 
 import de.greenrobot.event.EventBus;
 
