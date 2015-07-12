@@ -49,7 +49,7 @@ public class MainActivity extends BaseActivity {
 		List<TabInfo> tabs = new ArrayList<TabInfo>();
 		tabs.add(new TabInfo(0 , 1));
 		tabs.add(new TabInfo(1 , 1));
-		tabs.add(new TabInfo(3 , 1));
+		tabs.add(new TabInfo(2 , 1));
 		adapter = new MainViewPagerAdapter(this, tabs);
 		viewPager.setAdapter(adapter);
 	}
