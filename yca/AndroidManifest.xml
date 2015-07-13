@@ -20,7 +20,7 @@
         <meta-data android:value="YOUR_APP_KEY" android:name="UMENG_APPKEY"></meta-data>
 		<meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/>
         <activity
-            android:name="com.yca.app.MainActivity"
+            android:name="com.yca.activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

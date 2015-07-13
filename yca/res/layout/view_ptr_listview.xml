@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    
+	<com.lee.pullrefresh.ui.PullToRefreshListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </com.lee.pullrefresh.ui.PullToRefreshListView>
+    
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignBottom="@id/listview"
+	    android:layout_marginBottom="20dp"
+	    android:layout_marginRight="20dp">
+	    
+	    <ImageView
+	        android:id="@+id/pla_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/selector_go_top"/>
+
+	    <RelativeLayout
+	        android:id="@+id/pla_image_num_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        >
+	        <ImageView
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/go_top_num"/>
+
+	        <TextView
+	            android:id="@+id/nowTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="2dp"
+	            android:text=""
+	            android:textColor="#fff"
+	            android:textSize="12sp" />
+
+	        <TextView
+	            android:id="@+id/totalTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/nowTextView"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="0dp"
+	            android:text=""
+	            android:textColor="#fff"
+	            android:textSize="12sp" />
+	        
+	    </RelativeLayout>
+	    
+	</RelativeLayout>
+</RelativeLayout>
