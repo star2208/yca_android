@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import com.yca.R;
 import com.yca.adapter.MainViewPagerAdapter;
 import com.yca.info.TabInfo;
-import com.yca.tool.YLog;
+import com.yca.util.SystemBarTintManager;
 import com.yca.widget.CirclePageIndicator;
 
 import android.annotation.SuppressLint;
@@ -17,6 +17,7 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 
@@ -64,6 +65,7 @@ public class MainActivity extends BaseActivity implements OnPageChangeListener{
 		setActionbar();
 	}
 
+	@SuppressLint("InflateParams")
 	private void setActionbar() {
 		// TODO Auto-generated method stub
 		ActionBar.LayoutParams params = new LayoutParams(
@@ -97,7 +99,19 @@ public class MainActivity extends BaseActivity implements OnPageChangeListener{
 		// TODO Auto-generated method stub
 		tv_actiongbar.setText(tabs.get(position).getTitle());
 	}
-
+	private void initTint(){
+		SystemBarTintManager tintManager = new SystemBarTintManager(this);  
+		SystemBarTintManager.SystemBarConfig config = tintManager.getConfig();
+//		tintManager.setStatusBarTintEnabled(true);
+//		tintManager.setStatusBarTintDrawable(new ColorDrawable(getResources().getColor(R.color.mxx_item_theme_color_alpha)));
+		//mPagerSlidingTabStrip.setPadding(0, config.getPixelInsetTop(true), config.getPixelInsetRight(), 0);
+//		View rootView = findViewById(R.id.main_layout_root);
+		View tabLayout = findViewById(R.id.main_layout_root);
+		FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) tabLayout.getLayoutParams();
+		layoutParams.topMargin = config.getPixelInsetTop(true);
+//		layoutParams.height = MxxUiUtil.dip2px(this, 48) + config.getPixelInsetTop(true);
+		tabLayout.requestLayout();
+	}
 
 //  @Override
 //  public boolean onCreateOptionsMenu(Menu menu) {
