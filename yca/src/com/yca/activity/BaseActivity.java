@@ -7,7 +7,6 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.pm.ActivityInfo;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -15,11 +14,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 
 import com.umeng.analytics.MobclickAgent;
-import com.yca.R;
 import com.yca.content.BaseContent;
 import com.yca.fragment.BaseFragment;
 import com.yca.tool.Tool;
-import com.yca.util.SystemBarTintManager;
 import com.yca.util.SystemBarTintUtil;
 
 import de.greenrobot.event.EventBus;

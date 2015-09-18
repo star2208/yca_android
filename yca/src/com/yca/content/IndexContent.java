@@ -1,18 +1,19 @@
 package com.yca.content;
 
-import android.view.View;
+import android.widget.Scroller;
 
 import com.yca.R;
 import com.yca.activity.BaseActivity;
+import com.yca.adapter.CardsAnimationAdapter;
 import com.yca.adapter.MainListAdapter;
-import com.yca.util.ScreenUtil;
 import com.yca.util.SystemBarTintManager;
 import com.yca.widget.XListView;
 import com.yca.widget.XListView.IXListViewListener;
 
 public class IndexContent extends BaseContent implements IXListViewListener{
 
-	private MainListAdapter adapter;
+	private MainListAdapter listAdapter;
+	private CardsAnimationAdapter animationAdapter;
 	private XListView listView;
 
 	public IndexContent(BaseActivity activity) {
@@ -35,8 +36,11 @@ public class IndexContent extends BaseContent implements IXListViewListener{
 	@Override
 	public void InData() {
 		// TODO Auto-generated method stub
-		adapter = new MainListAdapter(activity);
-		listView.setAdapter(adapter);
+		listAdapter = new MainListAdapter(activity);
+		animationAdapter = new CardsAnimationAdapter(listAdapter);
+		animationAdapter.setAbsListView(listView);
+		listView.setAdapter(animationAdapter);
+		listView.setDividerHeight(0);
 		initInsetTop();
 		
 	}
