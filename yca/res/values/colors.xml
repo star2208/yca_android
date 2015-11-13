@@ -72,7 +72,7 @@
     <color name="mxx_item_actionbar_color">#55ffffff</color>
     <color name="mxx_item_theme_color">#ff92000c</color>
     <color name="mxx_item_theme_color_black">#ff393d43</color>
-    <color name="mxx_item_theme_color_alpha">#cc92000c</color>
+    <color name="mxx_item_theme_color_alpha">#ccd70000</color>
     
     <color name="mxx_item_normal_color">#ffffffff</color>
     <color name="mxx_item_pressed_color">#ffededed</color>
@@ -325,4 +325,6 @@
     <color name="picture_action_bar_item_pressed_color">#1effffff</color>
     <!-- 下拉刷新界面中最后更新时间的文字色 -->
     <color name="picture_pullrefresh_last_update_time_color">#c4c4c4</color>
+    
+    <color name="splash_bg">#d30051</color>
 </resources>

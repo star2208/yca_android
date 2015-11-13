@@ -1,18 +1,24 @@
 package com.yca.content;
 
-import android.widget.Scroller;
+import java.util.List;
 
-import com.yca.R;
+import org.apache.http.Header;
+
+import com.alibaba.fastjson.JSON;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.review.youngchina.R;
 import com.yca.activity.BaseActivity;
 import com.yca.adapter.CardsAnimationAdapter;
-import com.yca.adapter.MainListAdapter;
+import com.yca.adapter.IndexContentListAdapter;
+import com.yca.bean.BeanArticleCover;
+import com.yca.httpapi.RESTClient;
 import com.yca.util.SystemBarTintManager;
 import com.yca.widget.XListView;
 import com.yca.widget.XListView.IXListViewListener;
 
 public class IndexContent extends BaseContent implements IXListViewListener{
 
-	private MainListAdapter listAdapter;
+	private IndexContentListAdapter listAdapter;
 	private CardsAnimationAdapter animationAdapter;
 	private XListView listView;
 
@@ -36,13 +42,25 @@ public class IndexContent extends BaseContent implements IXListViewListener{
 	@Override
 	public void InData() {
 		// TODO Auto-generated method stub
-		listAdapter = new MainListAdapter(activity);
-		animationAdapter = new CardsAnimationAdapter(listAdapter);
-		animationAdapter.setAbsListView(listView);
-		listView.setAdapter(animationAdapter);
-		listView.setDividerHeight(0);
-		initInsetTop();
-		
+		RESTClient.HomePage(new AsyncHttpResponseHandler() {
+			
+			@Override
+			public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
+				
+				List<BeanArticleCover> articleCovers = JSON.parseArray(new String(arg2), BeanArticleCover.class);
+				listAdapter = new IndexContentListAdapter(activity,articleCovers);
+				animationAdapter = new CardsAnimationAdapter(listAdapter);
+				animationAdapter.setAbsListView(listView);
+				listView.setAdapter(animationAdapter);
+				listView.setDividerHeight(0);
+				initInsetTop();
+			}
+			
+			@Override
+			public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
+				
+			}
+		});
 	}
 
 	@Override

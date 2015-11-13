@@ -1,7 +1,6 @@
 package com.yca.content;
 
 import com.yca.activity.BaseActivity;
-import com.yca.tool.Tool;
 
 import android.content.Intent;
 import android.view.View;
@@ -15,14 +14,12 @@ import android.widget.AdapterView.OnItemClickListener;
  */
 public abstract class BaseContent  implements OnClickListener,OnItemClickListener {
 	protected View view;
-	protected Tool tool;
 	protected BaseActivity activity;
 	protected View loadingview;
 
 	public BaseContent(BaseActivity activity, int resourceID) {
 		this.activity = activity;
 		view = View.inflate(activity, resourceID, null);
-		tool = activity.tool;
 		findID();
 		Listener();
 		InData();

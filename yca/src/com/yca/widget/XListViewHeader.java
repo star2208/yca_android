@@ -7,7 +7,7 @@ package com.yca.widget;
  * @description XListView's header
  */
 
-import com.yca.R;
+import com.review.youngchina.R;
 
 import android.content.Context;
 import android.util.AttributeSet;

@@ -8,12 +8,11 @@ import com.yca.content.ChannelContent;
 import com.yca.content.FavoriteContent;
 import com.yca.content.IndexContent;
 import com.yca.info.TabInfo;
+import com.yca.info.TabList;
 
-import android.provider.ContactsContract.Contacts.Data;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
-import android.view.ViewGroup;
 
 
 public class MainViewPagerAdapter extends PagerAdapter {
@@ -44,10 +43,10 @@ public class MainViewPagerAdapter extends PagerAdapter {
 		TabInfo tabInfo = Tabs.get(position);
 		BaseContent content = null;
 		switch (tabInfo.getType()) {
-		case 0://首页
+		case TabList.HOME_PAGE://首页
 			content = new IndexContent(activity);
 			break;
-		case 1://列表
+		case TabList.TOPIC://列表
 			content = new ChannelContent(activity, tabInfo.getID());
 			break;
 		case 2://收藏

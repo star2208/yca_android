@@ -1,23 +1,30 @@
 package com.yca.activity;
 
 import java.util.ArrayList;
+import java.util.List;
 
-import com.yca.R;
+import org.apache.http.Header;
+
+
+import com.alibaba.fastjson.JSON;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.review.youngchina.R;
 import com.yca.adapter.MainViewPagerAdapter;
+import com.yca.bean.BeanTopic;
+import com.yca.httpapi.RESTClient;
 import com.yca.info.TabInfo;
-import com.yca.util.SystemBarTintManager;
+import com.yca.info.TabList;
+import com.yca.util.LogUtil;
 import com.yca.widget.CirclePageIndicator;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.ActionBar.LayoutParams;
-import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.TextView;
 
 
@@ -25,13 +32,13 @@ public class MainActivity extends BaseActivity implements OnPageChangeListener{
 	private ViewPager viewPager;
 	private MainViewPagerAdapter adapter;
 	private TextView tv_actiongbar;
-	private ArrayList<TabInfo> tabs;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-    	setContentView(R.layout.activity_main);
-        super.onCreate(savedInstanceState);
-    }
 
+	@Override
+	protected void setLayout() {
+		// TODO Auto-generated method stub
+		setContentView(R.layout.activity_main);
+	}
+	
 	@Override
 	protected void FindID() {
 		// TODO Auto-generated method stub
@@ -56,16 +63,39 @@ public class MainActivity extends BaseActivity implements OnPageChangeListener{
 	@Override
 	protected void InData() {
 		// TODO Auto-generated method stub
-		tabs = new ArrayList<TabInfo>();
-		tabs.add(new TabInfo(0 , 1 , getResources().getString(R.string.index_title)));
-		tabs.add(new TabInfo(1 , 1 , getResources().getString(R.string.article_title)));
-		tabs.add(new TabInfo(2 , 1 , getResources().getString(R.string.review_title)));
-		adapter = new MainViewPagerAdapter(this, tabs);
+		if (TabList.getInstance().isLoaded()) {
+			InitTabView();
+		}
+		else {
+			requestTabInfo();
+		}
+	}
+
+	private void requestTabInfo() {
+		// TODO Auto-generated method stub
+		RESTClient.Topics(new AsyncHttpResponseHandler() {
+			
+			@Override
+			public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
+				List<BeanTopic> topiclist = JSON.parseArray(new String(arg2), BeanTopic.class);
+				TabList.getInstance().addBeanTopicList(topiclist);
+				InitTabView();
+			}
+			
+			@Override
+			public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
+				//占坑
+				LogUtil.i("onFailure", "onFailure");
+			}
+		});
+	}
+
+	private void InitTabView() {
+		adapter = new MainViewPagerAdapter(this, TabList.getInstance());
 		viewPager.setAdapter(adapter);
 		setActionbar();
 	}
 
-	@SuppressLint("InflateParams")
 	private void setActionbar() {
 		// TODO Auto-generated method stub
 		ActionBar.LayoutParams params = new LayoutParams(
@@ -73,7 +103,7 @@ public class MainActivity extends BaseActivity implements OnPageChangeListener{
 				Gravity.CENTER);
 		View view = LayoutInflater.from(this).inflate(R.layout.view_main_action, null);
 		tv_actiongbar = (TextView) view.findViewById(R.id.tv_actionbar_content);
-		tv_actiongbar.setText(tabs.get(0).getTitle());
+		tv_actiongbar.setText(TabList.getInstance().get(0).getTitle());
 		CirclePageIndicator mIndicator = (CirclePageIndicator) view.findViewById(R.id.indicator);
 		mIndicator.setViewPager(viewPager);
 		mIndicator.setOnPageChangeListener(this);
@@ -97,21 +127,9 @@ public class MainActivity extends BaseActivity implements OnPageChangeListener{
 	@Override
 	public void onPageSelected(int position) {
 		// TODO Auto-generated method stub
-		tv_actiongbar.setText(tabs.get(position).getTitle());
+		tv_actiongbar.setText(TabList.getInstance().get(position).getTitle());
 	}
-	private void initTint(){
-		SystemBarTintManager tintManager = new SystemBarTintManager(this);  
-		SystemBarTintManager.SystemBarConfig config = tintManager.getConfig();
-//		tintManager.setStatusBarTintEnabled(true);
-//		tintManager.setStatusBarTintDrawable(new ColorDrawable(getResources().getColor(R.color.mxx_item_theme_color_alpha)));
-		//mPagerSlidingTabStrip.setPadding(0, config.getPixelInsetTop(true), config.getPixelInsetRight(), 0);
-//		View rootView = findViewById(R.id.main_layout_root);
-		View tabLayout = findViewById(R.id.main_layout_root);
-		FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) tabLayout.getLayoutParams();
-		layoutParams.topMargin = config.getPixelInsetTop(true);
-//		layoutParams.height = MxxUiUtil.dip2px(this, 48) + config.getPixelInsetTop(true);
-		tabLayout.requestLayout();
-	}
+
 
 //  @Override
 //  public boolean onCreateOptionsMenu(Menu menu) {

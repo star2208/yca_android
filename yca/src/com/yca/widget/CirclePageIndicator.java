@@ -16,7 +16,9 @@
  */
 package com.yca.widget;
 
-import com.yca.R;
+
+
+import com.review.youngchina.R;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

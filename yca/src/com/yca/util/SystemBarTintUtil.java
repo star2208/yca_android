@@ -1,6 +1,6 @@
 package com.yca.util;
 
-import com.yca.R;
+import com.review.youngchina.R;
 
 import android.app.Activity;
 import android.graphics.drawable.ColorDrawable;

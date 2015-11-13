@@ -1,24 +1,32 @@
 package com.yca.adapter;
 
+import java.util.List;
 
 
 import com.review.youngchina.R;
+import com.yca.activity.BaseActivity;
+import com.yca.bean.BeanArticleCover;
+import com.yca.manager.ImageLoaderMgr;
 
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainListAdapter extends YBaseAdapter {
+public class IndexContentListAdapter extends YBaseAdapter {
 	
-	public MainListAdapter(Context context) {
-		super(context);
+	private List<BeanArticleCover> articleCovers;
+
+	public IndexContentListAdapter(BaseActivity activity, List<BeanArticleCover> articleCovers) {
+		super(activity);
+		this.articleCovers = articleCovers;
 	}
 
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return 10;
+		return articleCovers.size();
 	}
 
 	@Override
@@ -44,7 +52,9 @@ public class MainListAdapter extends YBaseAdapter {
 			ViewHolder holder) {
 		// TODO Auto-generated method stub
 		TextView titleTextView = holder.obtainView(convertView, R.id.tv_item_main_list_title);
-		titleTextView.setText("病急投医的庞氏游戏");
+		ImageView coverImageView = holder.obtainView(convertView, R.id.iv_item_main_list_cover);
+		titleTextView.setText(articleCovers.get(position).title);
+		ImageLoaderMgr.getInstance().display(articleCovers.get(position).cover, coverImageView);
 		return convertView;
 	}
 

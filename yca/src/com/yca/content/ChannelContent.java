@@ -1,6 +1,6 @@
 package com.yca.content;
 
-import com.yca.R;
+import com.review.youngchina.R;
 import com.yca.activity.BaseActivity;
 
 public class ChannelContent extends BaseContent {

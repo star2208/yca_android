@@ -1,6 +1,13 @@
 package com.yca.app;
 
+import org.apache.http.Header;
+
+
+import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.umeng.analytics.AnalyticsConfig;
+import com.yca.httpapi.RESTClient;
+import com.yca.info.TabList;
+import com.yca.manager.ImageLoaderMgr;
 
 import android.app.Application;
 
@@ -14,8 +21,21 @@ public class YCAApplication extends Application {
 	public void onCreate() {
 		// TODO Auto-generated method stub
 		super.onCreate();
-		//友盟移动统计
 		AnalyticsConfig.enableEncrypt(true);
+		TabList.getInstance().init(this);
+		ImageLoaderMgr.getInstance().init(this);
+		RESTClient.StartUp(new AsyncHttpResponseHandler() {
+			
+			@Override
+			public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
+				
+			}
+			
+			@Override
+			public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
+				
+			}
+		});
 	}
 
 }
