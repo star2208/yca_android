@@ -5,8 +5,10 @@ import java.util.List;
 
 import com.review.youngchina.R;
 import com.yca.activity.BaseActivity;
+import com.yca.app.APIContact;
 import com.yca.bean.BeanArticleCover;
 import com.yca.manager.ImageLoaderMgr;
+import com.yca.util.LogUtil;
 
 import android.content.Context;
 import android.view.View;
@@ -51,10 +53,26 @@ public class IndexContentListAdapter extends YBaseAdapter {
 	public View getView(int position, View convertView, ViewGroup parent,
 			ViewHolder holder) {
 		// TODO Auto-generated method stub
+//		if(position == 0)
+//		{
+//			
+//		}
+//		else {
+//			switch (key) {
+//			case value:
+//				
+//				break;
+//
+//			default:
+//				break;
+//			}
+//		}
 		TextView titleTextView = holder.obtainView(convertView, R.id.tv_item_main_list_title);
 		ImageView coverImageView = holder.obtainView(convertView, R.id.iv_item_main_list_cover);
 		titleTextView.setText(articleCovers.get(position).title);
-		ImageLoaderMgr.getInstance().display(articleCovers.get(position).cover, coverImageView);
+		String urlString = articleCovers.get(position).cover + "&width=640&height=320";
+		LogUtil.i("urlString",APIContact.API_GET_FILE + urlString);
+		ImageLoaderMgr.getInstance().display(urlString, coverImageView);
 		return convertView;
 	}
 

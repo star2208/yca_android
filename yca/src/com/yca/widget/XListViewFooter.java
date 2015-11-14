@@ -112,6 +112,16 @@ public class XListViewFooter extends LinearLayout {
 		mProgressBar = moreView.findViewById(R.id.xlistview_footer_progressbar);
 		mHintView = (TextView)moreView.findViewById(R.id.xlistview_footer_hint_textview);
 	}
-	
+	public void setVisiableHeight(int height) {
+		if (height < 0)
+			height = 0;
+		LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) mContentView
+				.getLayoutParams();
+		lp.height = height;
+		mContentView.setLayoutParams(lp);
+	}
+	public int getVisiableHeight() {
+		return mContentView.getLayoutParams().height;
+	}
 	
 }

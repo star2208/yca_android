@@ -10,6 +10,7 @@ package com.yca.widget;
  */
 
 import com.review.youngchina.R;
+import com.yca.util.LogUtil;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -47,7 +48,7 @@ public class XListView extends ListView implements OnScrollListener {
 
 	// -- footer view
 	private XListViewFooter mFooterView;
-	private boolean mEnablePullLoad;
+	private boolean mEnablePullLoad = true;;
 	private boolean mPullLoading;
 	private boolean mIsFooterReady = false;
 	
@@ -311,8 +312,10 @@ public class XListView extends ListView implements OnScrollListener {
 				resetHeaderHeight();
 			} else if (getLastVisiblePosition() == mTotalItemCount - 1) {
 				// invoke load more.
+				LogUtil.i("mEnablePullLoad",Boolean.toString(mEnablePullLoad));
+				LogUtil.i("!mPullLoading",Boolean.toString(!mPullLoading));
 				if (mEnablePullLoad
-				    && mFooterView.getBottomMargin() > PULL_LOAD_MORE_DELTA
+				    //&& mFooterView.getBottomMargin() > PULL_LOAD_MORE_DELTA
 				    && !mPullLoading) {
 					startLoadMore();
 				}
