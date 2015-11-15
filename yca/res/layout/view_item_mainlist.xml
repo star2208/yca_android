@@ -5,7 +5,7 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         android:layout_marginBottom="2dp"
         android:layout_marginLeft="4dp"
         android:layout_marginRight="4dp"
@@ -29,8 +29,62 @@
             android:layout_marginRight="5dp"
             android:paddingBottom="4dp"
             android:paddingTop="4dp"
+            android:text="123123123"
             android:textColor="@color/black"
             android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_main_list_title" >
+
+            <TextView
+                android:id="@+id/tv_cover_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新闻简评"
+                android:textColor="#555555" />
+
+            <ImageView
+                android:id="@+id/time_icon"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_cover_topic"
+                android:src="@drawable/icon_time" />
+
+            <TextView
+                android:id="@+id/tv_cover_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/time_icon"
+                android:text="4小时前"
+                android:textColor="#555555" />
+
+            <ImageView
+                android:id="@+id/time_author"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21dp"
+                android:layout_toRightOf="@+id/tv_cover_time"
+                android:src="@drawable/icon_author" />
+
+            <TextView
+                android:id="@+id/tv_cover_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/time_author"
+                android:text="YCA新闻组" />
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
