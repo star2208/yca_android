@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/yca/app/src/main/res/values/vpi__attrs.xml -->
+    <eat-comment/>
+    <attr format="boolean" name="centered"/>
+    <attr format="color" name="selectedColor"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <attr format="color" name="unselectedColor"/>
+    <!-- From: file:/D:/yca/app/src/main/res/values/vpi__defaults.xml -->
+    <eat-comment/>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <bool name="default_line_indicator_centered">true</bool>
+    <bool name="default_title_indicator_selected_bold">true</bool>
+    <bool name="default_underline_indicator_fades">true</bool>
+    <!-- From: file:/D:/yca/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="action_btn_n">#ff57585b</color>
+    <color name="action_btn_p">#ff379bff</color>
+    <color name="add_bookmark">#ff222222</color>
+    <color name="add_bookmark_disable">#ffa7a7a7</color>
+    <color name="add_ding_text_color">#222222</color>
+    <color name="baiduservice_itemtxt">#888888</color>
+    <color name="black">#ff000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="browser_error_page_button_color">#222222</color>
+    <color name="browser_error_page_button_color_night">#333333</color>
+    <color name="browser_error_page_button_text_color">#525252</color>
+    <color name="browser_error_page_button_text_color_night">#98a1aa</color>
+    <color name="browser_error_page_text_color">#999999</color>
+    <color name="browser_menu_separator_color">#dedede</color>
+    <color name="browser_menu_separator_color_night">#3E3F41</color>
+    <color name="buaa_blue">#ff379bff</color>
+    <color name="buaa_blue_bak">#ff2c577a</color>
+    <color name="buaa_blue_bak_2">#ff323f7c</color>
+    <color name="buaa_blue_bak_3">#ff2c97e1</color>
+    <color name="buaa_blue_transparent">#99379bff</color>
+    <color name="button_text_color">#ff333333</color>
+    <color name="calendar_pressed_day_bg">#ff2c577a</color>
+    <color name="content_color">#ff222222</color>
+    <color name="createtime">#0e39aa</color>
+    <!-- From: file:/D:/yca/app/src/main/res/values/vpi__defaults.xml -->
+    <eat-comment/>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+    <color name="default_title_indicator_footer_color">#FF33B5E5</color>
+    <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
+    <color name="default_title_indicator_text_color">#BBFFFFFF</color>
+    <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
+    <!-- From: file:/D:/yca/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="dialog_bg">#ff000610</color>
+    <color name="dialog_btn_n">#aa000000</color>
+    <color name="dialog_btn_p">#f3000000</color>
+    <color name="dialog_edge">#80ffffff</color>
+    <color name="digital_clock_time_textcolor">#ff202020</color>
+    <color name="disable">#ffcecece</color>
+    <color name="discovery_tab_indicator_text_shadow">#4C000000</color>
+    <color name="divider_color">#ffd3d3d3</color>
+    <color name="download_bg_color">#F5F5F5</color>
+    <color name="download_delete_color">#555555</color>
+    <color name="download_delete_color_disable">#66555555</color>
+    <color name="download_item_press_color">#eeeeee</color>
+    <color name="download_item_sub_left_color">#999999</color>
+    <color name="download_item_sub_right_color">#777777</color>
+    <color name="download_item_title_color">#222222</color>
+    <color name="download_line1_color">#DCDCDC</color>
+    <color name="download_line2_color">#ffffff</color>
+    <color name="download_title_color">#ffffff</color>
+    <color name="download_title_pressed">#28000000</color>
+    <color name="downloaded_pic_select_color">#66000000</color>
+    <color name="downloading_failed_progress_run">#999999</color>
+    <color name="downloading_progress_bg">#DFDFDF</color>
+    <color name="downloading_run_progress_run">#4499EA</color>
+    <color name="duba_item_normal">#ff41464d</color>
+    <color name="duba_item_padding">#ff272a2e</color>
+    <color name="duba_item_pressed">#ff2c577a</color>
+    <color name="duba_item_pressed_duba">#ff4290f3</color>
+    <color name="enable">#ff222222</color>
+    <color name="fragment_bg">#f0f8f8</color>
+    <color name="geolocation_permissions_prompt_background">#ffdddddd</color>
+    <color name="grid_bottom_edge">#14000000</color>
+    <color name="grid_left_edge">#e5ffffff</color>
+    <color name="grid_right_edge">#14000000</color>
+    <color name="grid_top_edge">#e5ffffff</color>
+    <color name="home_entrance">#222222</color>
+    <color name="home_menu_separator_color">#686f75</color>
+    <color name="home_zeus_install_pop_textcolor">#FFFFFF</color>
+    <color name="hotspot_border_dark">#d8d8d8</color>
+    <color name="hotspot_border_light">#f6f6f6</color>
+    <color name="introduction_enter_textcolor">#666666</color>
+    <color name="kernel_restart_color">#1E88E2</color>
+    <color name="keyboard_line_bright">#ff333333</color>
+    <color name="keyboard_line_dark">#ff000000</color>
+    <color name="launcher_icon_pressed_color">#4C000000</color>
+    <color name="launcher_title_button_selected">#4C000000</color>
+    <color name="listbackground">#FFDCDCDC</color>
+    <color name="listheader">#CCFFFF</color>
+    <color name="localsearch_lookall_color">#1E88E2</color>
+    <color name="localsearch_lookall_color_night">#97A0A8</color>
+    <color name="main_bg">#ffffffff</color>
+    <color name="main_bg_grey">#fff6f6f6</color>
+    <color name="main_grey">#ffdddddd</color>
+    <color name="main_text_color">#1a1a1a</color>
+    <color name="mainsubbar">#515151</color>
+    <color name="maintext">#3a3a3a</color>
+    <color name="menu_bg">#ff34383e</color>
+    <color name="mxx_awesome_dark_color">#ff2f3136</color>
+    <color name="mxx_item_actionbar_color">#55ffffff</color>
+    <color name="mxx_item_actionbar_listview_divider_color">#22ffffff</color>
+    <color name="mxx_item_divider_color">#ffededed</color>
+    <color name="mxx_item_normal_color">#ffffffff</color>
+    <color name="mxx_item_padding_color">#ffe0e0e0</color>
+    <color name="mxx_item_pressed_color">#ffededed</color>
+    <color name="mxx_item_pressed_color_transparent">#19000000</color>
+    <color name="mxx_item_stroke_color">#ffbbbbbb</color>
+    <color name="mxx_item_theme_color">#ff92000c</color>
+    <color name="mxx_item_theme_color_alpha">#ccd70000</color>
+    <color name="mxx_item_theme_color_black">#ff393d43</color>
+    <color name="mxx_listview_bg">#ffe6e6e6</color>
+    <color name="mxx_text_main_color">#ff000000</color>
+    <color name="mxx_text_sub_color">#ff888888</color>
+    <color name="mxx_text_title_underline_color">#ffafafaf</color>
+    <color name="name_color">#ff000000</color>
+    <color name="name_color_bak">#ff0e39aa</color>
+    <color name="navigator_category_dash_line">#e2e2e2</color>
+    <color name="navigator_category_header_text">#222222</color>
+    <color name="navigator_disable">#cecece</color>
+    <color name="navigator_input_hint">#cecece</color>
+    <color name="navigator_input_label">#565656</color>
+    <color name="navigator_item_url">#777777</color>
+    <color name="navigator_trans_hint">#c60c02</color>
+    <color name="neighbourhood_border_dark">#e2e2e2</color>
+    <color name="neighbourhood_border_light">#ffffff</color>
+    <color name="novel_bottom_bar_deltext_color">#646464</color>
+    <color name="novel_bottom_bar_deltext_disbale_color">#64646464</color>
+    <color name="novel_bottombar_background">#b0000000</color>
+    <color name="novel_bottombar_textcolor">#b45137</color>
+    <color name="novel_list_item_background">#EEEEEE</color>
+    <color name="novel_list_item_bookname_color">#111111</color>
+    <color name="novel_list_item_readprocess_color">#c00b0b</color>
+    <color name="novel_newcount_text_color">#32373a</color>
+    <color name="novel_topbar_background">#F7F7F7</color>
+    <color name="novel_topbar_edit_color">#484848</color>
+    <color name="novel_topbar_shelf_color">#9c3a20</color>
+    <color name="null_color">#00FFFFFF</color>
+    <color name="picture_action_bar_background_color">#80000000</color>
+    <color name="picture_action_bar_item_pressed_color">#1effffff</color>
+    <color name="picture_album_background_color">#eeeeee</color>
+    <color name="picture_album_pressed_background_color">#14000000</color>
+    <color name="picture_album_text_color">#333333</color>
+    <color name="picture_loading_text_color">#999999</color>
+    <color name="picture_pullrefresh_last_update_time_color">#c4c4c4</color>
+    <color name="plugin_download_progress">#4499EA</color>
+    <color name="plugin_line">#CCCCCC</color>
+    <color name="plugin_text_dark">#222222</color>
+    <color name="plugin_text_light">#888888</color>
+    <color name="plugin_text_middle">#555555</color>
+    <color name="plugin_tip_frugal">#61AE1B</color>
+    <color name="popmenu_textcolor">#ffffffff</color>
+    <color name="quicksearch_highlight_color">#0072ff</color>
+    <color name="quicksearch_hint_color">#DDDDDD</color>
+    <color name="quicksearch_item_text1_color">#222222</color>
+    <color name="quicksearch_item_text2_color">#999999</color>
+    <color name="quote_text_color">#1a1a1a</color>
+    <color name="red">#ff0000</color>
+    <color name="refurbish_button_color">#105dc5</color>
+    <color name="renren_light">#ff808080</color>
+    <color name="renren_light_blue">#ff005092</color>
+    <color name="renren_light_blue_transparent">#99379bff</color>
+    <color name="renren_light_gray">#ff333333</color>
+    <color name="scrollbar_bg">#44000000</color>
+    <color name="searchbox_text">#000000</color>
+    <color name="searchbox_text_night">#97a0a8</color>
+    <color name="secondary_bar_background">#ffdadee8</color>
+    <color name="secondary_bar_textcolor">#ff566b8e</color>
+    <color name="secondary_text">#ff999999</color>
+    <color name="setting_pressed">#ffd3d3d3</color>
+    <color name="settings_quick_entry_bright">#F9F9F9</color>
+    <color name="settings_quick_entry_dark">#C2C2C2</color>
+    <color name="sidebar_grid_item_bg_n">#40ffffff</color>
+    <color name="sidebar_grid_item_bg_p">#40379bff</color>
+    <color name="sidebar_item_bg_pressed">#20ffffff</color>
+    <color name="solid_white">#ffffffff</color>
+    <color name="splash_bg">#d30051</color>
+    <color name="ssl_text_label">#ffffffff</color>
+    <color name="story_read">#4DAC00</color>
+    <color name="story_unread">#F43400</color>
+    <color name="sub_bg">#fff6f6f6</color>
+    <color name="sub_text_color">#6a6a6a</color>
+    <color name="sug_local_setting_text_color_normal">#626262</color>
+    <color name="sug_local_setting_text_color_press">#FFFFFF</color>
+    <color name="telephone_search_grid_divider">#e2e2e2</color>
+    <color name="time_color">#ff555555</color>
+    <color name="title_color">#6A6F73</color>
+    <color name="title_color_night">#999999</color>
+    <color name="title_hight_color">#222222</color>
+    <color name="title_hight_color_night">#ABB6BF</color>
+    <color name="title_text_color">#000000</color>
+    <color name="toolbar_gradient_end_color">#272830</color>
+    <color name="toolbar_gradient_start_color">#33353c</color>
+    <color name="transparent">#0000</color>
+    <color name="user_agent_about_light_color">#ff395f87</color>
+    <color name="username">#0e39aa</color>
+    <color name="view_bg_default_pressed">#33000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#7f000000</color>
+    <color name="website_bg">#EEEEEE</color>
+    <color name="website_title_color">#222222</color>
+    <color name="welcom_page_blank_view_background">#80000000</color>
+    <color name="welcom_page_enter_btn_text">#ff00868f</color>
+    <color name="welcom_page_enter_page_title_text">#ffdde8e8</color>
+    <color name="white">#ffffffff</color>
+    <color name="widget_clock_pressed">#1Affffff</color>
+    <color name="widget_divider_color">#33ffffff</color>
+    <color name="widget_help">#eaeaea</color>
+    <color name="widget_introduction_1">#85B7E1</color>
+    <color name="widget_introduction_2">#E6A973</color>
+    <color name="widget_introduction_3">#76AD5A</color>
+    <color name="window_background_color">#E2E2E2</color>
+    <declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="LinePageIndicator"><attr name="centered"/><attr name="unselectedColor"/><attr name="selectedColor"/><attr format="dimension" name="lineWidth"/><attr name="strokeWidth"/><attr format="dimension" name="gapWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle"><enum name="none" value="0"/><enum name="triangle" value="1"/><enum name="underline" value="2"/></attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition"><enum name="bottom" value="0"/><enum name="top" value="1"/></attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="UnderlinePageIndicator"><attr format="boolean" name="fades"/><attr format="integer" name="fadeDelay"/><attr format="integer" name="fadeLength"/><attr name="selectedColor"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
+    <!-- From: file:/D:/yca/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <!-- From: file:/D:/yca/app/src/main/res/values/vpi__defaults.xml -->
+    <eat-comment/>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_line_indicator_gap_width">4dp</dimen>
+    <dimen name="default_line_indicator_line_width">12dp</dimen>
+    <dimen name="default_line_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_title_indicator_clip_padding">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20dp</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2dp</dimen>
+    <dimen name="default_title_indicator_footer_padding">7dp</dimen>
+    <dimen name="default_title_indicator_text_size">15dp</dimen>
+    <dimen name="default_title_indicator_title_padding">5dp</dimen>
+    <dimen name="default_title_indicator_top_padding">7dp</dimen>
+    <!-- From: file:/D:/yca/app/src/main/res/values/picture_dimens.xml -->
+    <eat-comment/>
+    <dimen name="pciture_view_pager_margin">80dp</dimen>
+    <dimen name="picture_action_bar_button_margin">0dp</dimen>
+    <dimen name="picture_action_bar_height">48dp</dimen>
+    <dimen name="picture_action_bar_page_index_text_size">18dp</dimen>
+    <dimen name="picture_album_column_margin">5dp</dimen>
+    <dimen name="picture_album_item_title_height">30dp</dimen>
+    <dimen name="picture_album_text_margin">6dp</dimen>
+    <dimen name="picture_album_title_text_size">12dp</dimen>
+    <dimen name="picture_album_top_margin">10dp</dimen>
+    <dimen name="picture_album_view_margin">8dp</dimen>
+    <dimen name="picture_album_view_margin_bottom">9dp</dimen>
+    <dimen name="picture_count_text_size">12dp</dimen>
+    <dimen name="picture_loading_text_top_margin">12dp</dimen>
+    <dimen name="picture_pull_to_refresh_footer_height">40dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_text_size">10dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_top_margin">6dp</dimen>
+    <dimen name="picture_pull_to_refresh_loading_text_size">14dp</dimen>
+    <dimen name="picture_reload_text_size">16dp</dimen>
+    <dimen name="picture_user_guide_margin">8dp</dimen>
+    <!-- From: file:/D:/yca/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <drawable name="SettingsActivityBackGround">#ffffffff</drawable>
+    <drawable name="bookmarkdir_item_bg_normal">#ffffff</drawable>
+    <drawable name="bookmarkdir_item_bg_pressed">#62A7FF</drawable>
+    <drawable name="kernel_installing_bg">#99000000</drawable>
+    <drawable name="navigation_menu_item_bg_press">#4297ff</drawable>
+    <drawable name="novel_list_item_bg">#EEEEEE</drawable>
+    <drawable name="novel_list_item_click_bg">#E4E4E4</drawable>
+    <drawable name="novel_story_read">#4DAC00</drawable>
+    <drawable name="novel_topbar_righttext_cliclbg">#08000000</drawable>
+    <drawable name="null_drawable">#00ffffff</drawable>
+    <drawable name="plugin_download_paused">#EEEEEE</drawable>
+    <drawable name="quicksearch_list_divider_color">#e7e7e7</drawable>
+    <drawable name="search_bg_night_color">#46484A</drawable>
+    <drawable name="search_bg_normal">#00ffffff</drawable>
+    <drawable name="search_bg_normal_color">#EEEEEE</drawable>
+    <drawable name="search_bg_press">#33000000</drawable>
+    <drawable name="search_widget_pressed">#14000000</drawable>
+    <drawable name="searchbox_bg">#eeeeee</drawable>
+    <drawable name="searchbox_bg_night">#46484A</drawable>
+    <drawable name="searchbox_webview_night_bg">#353535</drawable>
+    <drawable name="settings_quick_entry_enable">#F9F9F9</drawable>
+    <drawable name="share_type_normal">#FFFFFF</drawable>
+    <drawable name="share_type_pressed">#F2F2F2</drawable>
+    <drawable name="spinner_dropdown_item_bg_normal">#ffffff</drawable>
+    <drawable name="spinner_dropdown_item_bg_pressed">#e5e5e5</drawable>
+    <drawable name="telephone_search_grid_item_normal">#ffffff</drawable>
+    <drawable name="telephone_search_selector_cancel_normal">#f5f5f5</drawable>
+    <drawable name="telephone_search_selector_cancel_pressed">#e2e2e2</drawable>
+    <drawable name="title_color_bg">#F5F5F5</drawable>
+    <drawable name="title_color_bg_night">#2A2A2A</drawable>
+    <drawable name="titlebar_normal_click_background">#0C000000</drawable>
+    <drawable name="titlebar_xsearch_click_background">#4C000000</drawable>
+    <drawable name="trans_search_widget_pressed">#33e5e5e5</drawable>
+    <drawable name="transparent_drawable">#00ffffff</drawable>
+    <drawable name="white_divider">#ffffff</drawable>
+    <drawable name="white_drawable">#ffffffff</drawable>
+    <!-- From: file:/D:/yca/app/src/main/res/values/vpi__defaults.xml -->
+    <eat-comment/>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <integer name="default_title_indicator_footer_indicator_style">2</integer>
+    <integer name="default_title_indicator_line_position">0</integer>
+    <integer name="default_underline_indicator_fade_delay">300</integer>
+    <integer name="default_underline_indicator_fade_length">400</integer>
+    <!-- From: file:/D:/yca/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">少年中国评论</string>
+    <string name="article_title">文章</string>
+    <string name="favorite">收藏</string>
+    <string name="index_title">少年中国评论</string>
+    <string name="review_title">简评</string>
+    <!-- From: file:/D:/yca/app/src/main/res/values/xlist_strings.xml -->
+    <eat-comment/>
+    <string name="xlistview_footer_hint_normal">点击或上拉查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <!-- From: file:/D:/yca/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="SplashTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="yca_dialog_style_animation_from_center_bottom" parent="@android:style/Animation.Dialog">
+        <!--<item name="android:windowEnterAnimation">@anim/center_up_in</item> -->
+        <!--<item name="android:windowExitAnimation">@anim/center_down_out</item> -->
+    </style>
+    <style name="yca_theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        
+    </style>
+</resources>

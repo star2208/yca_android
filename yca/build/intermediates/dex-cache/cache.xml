@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\yca\app\libs\android-async-http-1.4.8.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="77bbfe240e437ecb396d982afa0d3bd4f9090ba7">
+        <dex dex="D:\yca\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.8-31765e6334215cf602b26d1e1275f379728aae66.jar" />
+    </item>
+    <item
+        jar="D:\yca\app\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="D:\yca\app\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0-b299f517f46d0b5a997c6117b79edc383ba9fe40.jar" />
+    </item>
+    <item
+        jar="D:\yca\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="D:\yca\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-d81e1d94d161c8564feebbbd8e745362b350e59d.jar" />
+    </item>
+    <item
+        jar="D:\yca\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="D:\yca\app\build\intermediates\pre-dexed\debug\classes-53d3c63528b4389a938b2cc188ebe32e0bb4006a.jar" />
+    </item>
+    <item
+        jar="D:\yca\app\libs\fastjson-1.1.45.android.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4d5140a0c8f5e4d0f263cac44dbac1019a908474">
+        <dex dex="D:\yca\app\build\intermediates\pre-dexed\debug\fastjson-1.1.45.android-68666a3c2820537448658df85742955dd8938f7a.jar" />
+    </item>
+    <item
+        jar="D:\yca\app\libs\universal-image-loader-1.9.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
+        <dex dex="D:\yca\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.4-2bf1e5873ca22d4cd3fb6805057bb76965e09309.jar" />
+    </item>
+    <item
+        jar="D:\yca\app\libs\umeng-analytics-v5.5.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5d503ec571e2e98d972209afa203f94d11882c15">
+        <dex dex="D:\yca\app\build\intermediates\pre-dexed\debug\umeng-analytics-v5.5.3-85a9bb55df660b6c4f80645a0c7ca54cc6e1a5f7.jar" />
+    </item>
+    <item
+        jar="D:\yca\app\libs\listviewanimations-2.6.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="59351ccb0a1631d30358f6a92749a072f2df7602">
+        <dex dex="D:\yca\app\build\intermediates\pre-dexed\debug\listviewanimations-2.6.0-52bf6b5f23d07a0a5f1e5b9fcdd22c31af7eeb90.jar" />
+    </item>
+    <item
+        jar="C:\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="D:\yca\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-1a91d67e25887382ad77016d17f9756907a4b78a.jar" />
+    </item>
+    <item
+        jar="D:\yca\app\libs\jpush-android-2.0.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f2c821a0d13219a2e70490085c390bab03fb5953">
+        <dex dex="D:\yca\app\build\intermediates\pre-dexed\debug\jpush-android-2.0.5-4d4ac73672c9e0e37e993a8fe445b7081838a01a.jar" />
+    </item>
+
+</items>
