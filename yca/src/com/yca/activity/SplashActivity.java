@@ -49,20 +49,21 @@ public class SplashActivity extends BaseActivity {
 	@Override
 	protected void InData() {
 		// TODO Auto-generated method stub
-		RESTClient.Topics(new AsyncHttpResponseHandler() {
-			
-			@Override
-			public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
-				List<BeanTopic> topiclist = JSON.parseArray(new String(arg2), BeanTopic.class);
-				TabList.getInstance().addBeanTopicList(topiclist);
-			}
-			
-			@Override
-			public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
+		if (!TabList.getInstance().isLoaded()) {
+			RESTClient.Topics(new AsyncHttpResponseHandler() {
 				
-			}
-		});
-		
+				@Override
+				public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
+					List<BeanTopic> topiclist = JSON.parseArray(new String(arg2), BeanTopic.class);
+					TabList.getInstance().addBeanTopicList(topiclist);
+				}
+				
+				@Override
+				public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
+					
+				}
+			});
+		}
 		new Handler().postDelayed(new Runnable() {
 			
 			@Override
