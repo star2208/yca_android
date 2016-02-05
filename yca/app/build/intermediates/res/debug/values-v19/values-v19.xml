@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/yca/app/src/main/res/values-v19/styles.xml -->
+    <!-- From: file:/D:/yca_android/yca/app/src/main/res/values-v19/styles.xml -->
     <eat-comment/>
     <style name="YCABaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
 		<item name="android:windowTranslucentStatus">true</item>

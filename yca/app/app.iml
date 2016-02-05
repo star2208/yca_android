@@ -90,8 +90,8 @@
     <orderEntry type="library" exported="" name="umeng-analytics-v5.5.3" level="project" />
     <orderEntry type="library" exported="" name="nineoldandroids-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="jpush-android-2.0.5" level="project" />
-    <orderEntry type="library" exported="" name="listviewanimations-2.6.0" level="project" />
     <orderEntry type="library" exported="" name="fastjson-1.1.45.android" level="project" />
+    <orderEntry type="library" exported="" name="listviewanimations-2.6.0" level="project" />
     <orderEntry type="library" exported="" name="universal-image-loader-1.9.4" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-20.0.0" level="project" />
     <orderEntry type="library" exported="" name="support-v4-20.0.0" level="project" />

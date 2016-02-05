@@ -32,4 +32,4 @@
             android:fillEnabled="true"
             android:fillBefore="false" android:fillAfter="true"
             android:duration="300"/>
-</set><!-- From: file:/D:/yca/app/src/main/res/anim/yca_activity_open_enter.xml -->
+</set><!-- From: file:/D:/yca_android/yca/app/src/main/res/anim/yca_activity_open_enter.xml -->

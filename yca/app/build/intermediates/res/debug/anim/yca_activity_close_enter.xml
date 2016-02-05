@@ -21,4 +21,4 @@
     <alpha android:fromAlpha="1.0" android:toAlpha="1.0"
             android:fillEnabled="true" android:fillBefore="true" android:fillAfter="true"
             android:duration="300"/>
-</set><!-- From: file:/D:/yca/app/src/main/res/anim/yca_activity_close_enter.xml -->
+</set><!-- From: file:/D:/yca_android/yca/app/src/main/res/anim/yca_activity_close_enter.xml -->

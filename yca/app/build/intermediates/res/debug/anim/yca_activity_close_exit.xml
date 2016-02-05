@@ -29,4 +29,4 @@
             android:interpolator="@android:interpolator/decelerate_cubic"
             android:fillEnabled="true" android:fillBefore="true" android:fillAfter="true"
             android:duration="300"/>
-</set><!-- From: file:/D:/yca/app/src/main/res/anim/yca_activity_close_exit.xml -->
+</set><!-- From: file:/D:/yca_android/yca/app/src/main/res/anim/yca_activity_close_exit.xml -->

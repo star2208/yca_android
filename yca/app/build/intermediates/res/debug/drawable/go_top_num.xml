@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/go_top_num_hit" android:state_focused="true"/>
     <item android:drawable="@drawable/go_top_num"/>
 </selector>
-<!-- From: file:/D:/yca/app/src/main/res/drawable/go_top_num.xml -->
+<!-- From: file:/D:/yca_android/yca/app/src/main/res/drawable/go_top_num.xml -->

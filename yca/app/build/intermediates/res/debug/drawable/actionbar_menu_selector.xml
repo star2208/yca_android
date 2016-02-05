@@ -5,4 +5,4 @@
     <item android:state_focused="true" android:drawable="@color/mxx_item_pressed_color_transparent" />
     <item android:state_focused="false" android:state_pressed="true" android:drawable="@color/mxx_item_pressed_color_transparent" />
     <item android:drawable="@android:color/transparent" />
-</selector><!-- From: file:/D:/yca/app/src/main/res/drawable/actionbar_menu_selector.xml -->
+</selector><!-- From: file:/D:/yca_android/yca/app/src/main/res/drawable/actionbar_menu_selector.xml -->

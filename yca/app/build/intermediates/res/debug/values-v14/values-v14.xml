@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/yca/app/src/main/res/values-v14/styles.xml -->
+    <!-- From: file:/D:/yca_android/yca/app/src/main/res/values-v14/styles.xml -->
     <eat-comment/>
     <style name="ActionbarOverFlowStyle" parent="@android:style/Widget.Holo.ActionButton.Overflow">
         <item name="android:src">@drawable/yca_holo_ic_action_overflow_white</item>
