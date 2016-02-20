@@ -5,6 +5,7 @@ import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.yca.app.APIContact;
+import com.yca.util.LogUtil;
 
 import android.content.Context;
 
@@ -26,6 +27,7 @@ public class RESTClient {
 	 * HTTP-GET
 	 */
 	private static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
+		LogUtil.i(url,params.toString());
 		sClient.get(url, params, responseHandler);
 	}
 
@@ -33,6 +35,7 @@ public class RESTClient {
 	 * HTTP-POST
 	 */
 	private static void post(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
+		LogUtil.i(url,params.toString());
 		sClient.post(url, params, responseHandler);
 	}
 

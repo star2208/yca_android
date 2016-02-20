@@ -71,7 +71,7 @@ public class IndexContentListAdapter extends YBaseAdapter {
 		ImageView coverImageView = holder.obtainView(convertView, R.id.iv_item_main_list_cover);
 		titleTextView.setText(articleCovers.get(position).title);
 		String urlString = articleCovers.get(position).cover + "&width=640&height=320";
-		LogUtil.i("urlString",APIContact.API_GET_FILE + urlString);
+		//LogUtil.i("urlString",APIContact.API_GET_FILE + urlString);
 		ImageLoaderMgr.getInstance().display(urlString, coverImageView);
 		return convertView;
 	}
