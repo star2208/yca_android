@@ -25,13 +25,11 @@ public class IndexContent extends BaseContent implements IXListViewListener{
 	private List<BeanArticleCover> articleCovers;
 
 	public IndexContent(BaseActivity activity) {
-		// TODO Auto-generated constructor stub
 		super(activity, R.layout.view_index_content);
 	}
 
 	@Override
 	public void findID() {
-		// TODO Auto-generated method stub
 		listView = (XListView) findViewById(R.id.listview);
 		listView.setXListViewListener(this);
 	}

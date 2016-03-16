@@ -71,14 +71,16 @@ public class RESTClient {
 		RequestParams params = new RequestParams();
 		get(APIContact.API_GET_APP_STARTUP, params, onResponse);
 	}
-		/**
-		 * 启动请求
-		 */
+	/**
+	 * 栏目列表
+	 */
 	public static void Topics(AsyncHttpResponseHandler onResponse) {
 		RequestParams params = new RequestParams();
 		get(APIContact.API_GET_ARTICLES_TOPICS, params, onResponse);
 	}
-	
+	/**
+	 * 首页请求
+	 */
 	public static void HomePage(AsyncHttpResponseHandler onResponse) {
 		RequestParams params = new RequestParams();
 		get(APIContact.API_GET_HOMEPAGE, params, onResponse);
